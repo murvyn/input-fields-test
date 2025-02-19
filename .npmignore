@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build files
+dist/
+build/
+out/
+
+# Source maps
+*.map
+
+# Testing
+coverage/
+test/
+__tests__/
+jest.config.js
+jest.setup.js
+
+# Editor & OS-specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
