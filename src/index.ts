@@ -1166,7 +1166,7 @@ export class InputFieldsTest {
     }
 
     // Verify uploading a single file
-    const testFilePath = path.resolve(__dirname, "../utils/assets/1.jpg");
+    const testFilePath = path.resolve(__dirname, "../utils/assets/1.webp");
     const testFilePath2 = path.resolve(__dirname, "../utils/assets/2.jpg");
     await input.setInputFiles(testFilePath);
     const uploadedFiles = await input.evaluate((el: any) => el.files?.length);
