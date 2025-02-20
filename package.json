@@ -1,6 +1,6 @@
 {
   "name": "playwright-input-check",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./dist/index.js",
   "module": "./dist/types.mjs",
   "types": "dist/index.d.ts",
