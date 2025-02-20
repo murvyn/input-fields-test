@@ -1,17 +1,21 @@
 {
-  "name": "input-fields-test",
-  "version": "1.0.1",
-  "main": "index.ts",
+  "name": "playwright-input-check",
+  "version": "1.0.2",
+  "main": "./dist/index.js",
+  "module": "./dist/types.mjs",
+  "types": "dist/index.d.ts",
+  "repository": {"url": "https://github.com/murvyn/input-fields-test"},
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "build": "tsup"
   },
-  "keywords": [],
+  "keywords": ["playwright", "test"],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@types/node": "^22.13.1",
     "ts-node": "^10.9.2",
+    "tsup": "^8.3.6",
     "typescript": "^5.7.3"
   }
 }
