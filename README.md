@@ -5,7 +5,7 @@
 ## Installation
 
 ```sh
-npm install input-fields-test
+npm install playwright-input-check
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ Import and initialize `InputFieldsTest` in your Playwright test setup:
 
 ```ts
 import { test, expect } from '@playwright/test';
-import { InputFieldsTest } from 'input-fields-test';
+import { InputFieldsTest } from 'playwright-input-check';
 
 
 test('Test input field', async ({ page }) => {
@@ -26,6 +26,16 @@ test('Test input field', async ({ page }) => {
     maxLength: 20,
   });
 });
+```
+
+## Playwright Configuration
+
+Ensure you add the following permissions to your Playwright configuration file (`playwright.config.ts`) under `use`:
+
+```ts
+use: {
+  permissions: ['clipboard-read', 'clipboard-write']
+}
 ```
 
 ## API
